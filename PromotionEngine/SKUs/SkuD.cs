@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace PromotionEngine.SKUs
 {
-    class SkuD
+    public class SkuD : ISku
     {
+        public SkuD()
+        {
+            Price = 15;
+        }
+
+        public decimal Price { get; }
     }
 }

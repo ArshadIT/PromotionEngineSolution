@@ -3,7 +3,7 @@ using Xunit;
 
 namespace PromotionEngine.Unit.Tests
 {
-    public class UnitTest1
+    public class PromotionEngineTests
     {
         [Fact]
         public void Test1()

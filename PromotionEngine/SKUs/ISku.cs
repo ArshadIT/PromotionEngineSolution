@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PromotionEngine.SKUs
 {
-    interface ISku
+    public interface ISku
     {
         decimal Price { get; }
     }
