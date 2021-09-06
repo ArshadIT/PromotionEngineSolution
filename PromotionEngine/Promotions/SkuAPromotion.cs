@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PromotionEngine.Promotions
 {
-    class SkuAPromotion : IPromotion
+    public class SkuAPromotion : IPromotion
     {
         public decimal GetPriceAfterPromotion(Dictionary<string, int> keyValueSkus)
         {

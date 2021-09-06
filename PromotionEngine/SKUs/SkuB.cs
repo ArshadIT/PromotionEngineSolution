@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PromotionEngine.SKUs
 {
-    class SkuB : ISku
+   public  class SkuB : ISku
     {
         public SkuB()
         {
