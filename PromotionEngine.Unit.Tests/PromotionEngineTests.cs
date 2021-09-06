@@ -29,5 +29,25 @@ namespace PromotionEngine.Unit.Tests
 
             Assert.True(actual == total);
         }
+        [Fact]
+        public void Test2_WithPromotionsBsku()
+        {
+
+            List<IPromotion> promotions = new List<IPromotion>();
+            promotions.Add(new SkuBPromotion()); //45
+
+            //Arrange 
+            Cart cart = new Cart(promotions);
+
+            cart.SKUs.Add(new SkuA());  //50
+            cart.SKUs.Add(new SkuB());  //30
+            cart.SKUs.Add(new SkuB());  //30
+            cart.SKUs.Add(new SkuC());  //20
+
+            decimal actual = 50 + 30 + 30 + 20 + 45;
+            var total = cart.GetTotalPriceAfterPromotion();
+
+            Assert.True(actual == total);
+        }
     }
 }
